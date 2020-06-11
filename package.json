@@ -1,0 +1,25 @@
+{
+  "name": "employeemanagment",
+  "version": "1.0.0",
+  "description": "employee directory ",
+  "main": "EmpManagement.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brushing1215/employeeManagment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brushing1215/employeeManagment/issues"
+  },
+  "homepage": "https://github.com/Brushing1215/employeeManagment#readme",
+  "dependencies": {
+    "asciiart-logo": "^0.2.6",
+    "inquirer": "^7.1.0",
+    "mysql": "^2.18.1"
+  }
+}

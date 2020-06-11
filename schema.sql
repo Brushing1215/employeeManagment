@@ -3,11 +3,25 @@ CREATE DATABASE EmpManagement_DB;
 
 USE EmpManagement_DB;
 
-CREATE TABLE auctions(
+CREATE TABLE employee(
   id INT NOT NULL AUTO_INCREMENT,
-  item_name VARCHAR(100) NOT NULL,
-  category VARCHAR(45) NOT NULL,
-  starting_bid INT default 0,
-  highest_bid INT default 0,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30) NOT NULL,
+  role_id INT NOT NULL,
+  manager_id INT ,
   PRIMARY KEY (id)
+);
+
+CREATE TABLE role(
+      id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(30) NOT NULL,
+    salary DECIMAL NOT NULL,
+    department_id INT NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE department(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(30) NOT NULL,
+    PRIMARY KEY(id)
 );
